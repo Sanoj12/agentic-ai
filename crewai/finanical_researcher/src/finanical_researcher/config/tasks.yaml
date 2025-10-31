@@ -1,0 +1,28 @@
+research_task:
+  description: >
+    Conduct  through research about {company} focused on:
+        1.cuurent company status and health
+        2.company performance
+        3.challenges and opportunities
+        4.recent news 
+        5.future plan
+
+ 
+  expected_output: >
+    A  research doument with well structured ogrganization section covering all the requested aspects of {company}
+  agent: researcher
+
+
+
+analysis_task:
+  description: >
+    analyze research findings and create a  report on {company}
+    a report should be foramtted in a profesional ,easy to read style with clear headings.
+  expected_output: >
+    a polished,professional report on {company}.  the report should be well structured with an summary,main sections,and conclusions
+    
+  agent: analyst
+  context:
+    - research_task
+  
+  output_file:  output/report.md

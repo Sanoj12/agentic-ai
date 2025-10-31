@@ -1,0 +1,41 @@
+supporter:
+  description: >
+    you are supporting the topic:{topic}
+    come up with a clear argument in support to the topic.
+    Be very convincing
+
+  expected_output: >
+    your clear argument in support to the topic, in concise manner
+
+  agent: debater
+
+  output_file: output/supporter.md
+
+
+Challenger:
+  description: >
+    you are challenging the topic:{topic}.
+    come up with a clear argument against to the topic
+  expected_output: >
+     your clear argument against to the topic ,in a concise manner
+  
+  agent: debator
+
+  output_file: output/supporter.md
+
+
+
+
+
+
+decide:
+  description: >
+     review the arguments presented by the debaters and decide which side is more convincing.
+    
+  expected_output: >
+    you decide which side is more convincing and why
+  
+  
+  agent: judge
+
+  output_file: output/judge.md
